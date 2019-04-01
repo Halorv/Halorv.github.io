@@ -100,17 +100,17 @@
 
 
 
-  <meta name="description" content="题目链接：传送门找到一个点使删除这个点后图中的最长路最短 DAG——-&amp;gt;拓扑 好吧第一步就挂掉了 标签线段树主席树？ 好像线段树确实也能做 设$f[i]表示到达$i的最长路 $ff[i]表示从$i出发的最长路 一条最长路（起点fr,终点ca）一定等于 $f[fr]+ff[ca]+1$ 所以做法就出来了 枚举每个点用一个堆来维护每个节点的贡献 可以删去和插入和询问最大值 记着最后把那个+1减掉">
+  <meta name="description" content="题目链接：传送门找到一个点使删除这个点后图中的最长路最短 DAG——-&amp;gt;拓扑 好吧第一步就挂掉了 标签线段树主席树？ 好像线段树确实也能做 设$f[i]$表示到达$i$的最长路 $ff[i]$表示从$i$出发的最长路 一条最长路（起点$fr$,终点$ca$）一定等于 $f[fr]+ff[ca]+1$ 所以做法就出来了 枚举每个点用一个堆来维护每个节点的贡献 可以删去和插入和询问最大值 记着最">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[POI2014]RAJ-Rally">
 <meta property="og:url" content="http://yoursite.com/2019/04/01/POI2014-RAJ-Rally/index.html">
 <meta property="og:site_name" content="明年今日">
-<meta property="og:description" content="题目链接：传送门找到一个点使删除这个点后图中的最长路最短 DAG——-&amp;gt;拓扑 好吧第一步就挂掉了 标签线段树主席树？ 好像线段树确实也能做 设$f[i]表示到达$i的最长路 $ff[i]表示从$i出发的最长路 一条最长路（起点fr,终点ca）一定等于 $f[fr]+ff[ca]+1$ 所以做法就出来了 枚举每个点用一个堆来维护每个节点的贡献 可以删去和插入和询问最大值 记着最后把那个+1减掉">
+<meta property="og:description" content="题目链接：传送门找到一个点使删除这个点后图中的最长路最短 DAG——-&amp;gt;拓扑 好吧第一步就挂掉了 标签线段树主席树？ 好像线段树确实也能做 设$f[i]$表示到达$i$的最长路 $ff[i]$表示从$i$出发的最长路 一条最长路（起点$fr$,终点$ca$）一定等于 $f[fr]+ff[ca]+1$ 所以做法就出来了 枚举每个点用一个堆来维护每个节点的贡献 可以删去和插入和询问最大值 记着最">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-01T14:25:31.595Z">
+<meta property="og:updated_time" content="2019-04-01T22:18:27.573Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[POI2014]RAJ-Rally">
-<meta name="twitter:description" content="题目链接：传送门找到一个点使删除这个点后图中的最长路最短 DAG——-&amp;gt;拓扑 好吧第一步就挂掉了 标签线段树主席树？ 好像线段树确实也能做 设$f[i]表示到达$i的最长路 $ff[i]表示从$i出发的最长路 一条最长路（起点fr,终点ca）一定等于 $f[fr]+ff[ca]+1$ 所以做法就出来了 枚举每个点用一个堆来维护每个节点的贡献 可以删去和插入和询问最大值 记着最后把那个+1减掉">
+<meta name="twitter:description" content="题目链接：传送门找到一个点使删除这个点后图中的最长路最短 DAG——-&amp;gt;拓扑 好吧第一步就挂掉了 标签线段树主席树？ 好像线段树确实也能做 设$f[i]$表示到达$i$的最长路 $ff[i]$表示从$i$出发的最长路 一条最长路（起点$fr$,终点$ca$）一定等于 $f[fr]+ff[ca]+1$ 所以做法就出来了 枚举每个点用一个堆来维护每个节点的贡献 可以删去和插入和询问最大值 记着最">
 
 
 
@@ -387,12 +387,24 @@
                 
               
 
-              <time title="创建时间：2019-04-01 22:24:57 / 修改时间：22:25:31" itemprop="dateCreated datePublished" datetime="2019-04-01T22:24:57+08:00">2019-04-01</time>
+              <time title="创建时间：2019-04-01 22:24:57" itemprop="dateCreated datePublished" datetime="2019-04-01T22:24:57+08:00">2019-04-01</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-02 06:18:27" itemprop="dateModified" datetime="2019-04-02T06:18:27+08:00">2019-04-02</time>
               
             
           </span>
@@ -431,9 +443,9 @@
 <p>好吧第一步就挂掉了</p>
 <p>标签线段树主席树？</p>
 <p>好像线段树确实也能做</p>
-<p>设$f[i]表示到达$i的最长路</p>
-<p>$ff[i]表示从$i出发的最长路</p>
-<p>一条最长路（起点fr,终点ca）一定等于 $f[fr]+ff[ca]+1$</p>
+<p>设$f[i]$表示到达$i$的最长路</p>
+<p>$ff[i]$表示从$i$出发的最长路</p>
+<p>一条最长路（起点$fr$,终点$ca$）一定等于 $f[fr]+ff[ca]+1$</p>
 <p>所以做法就出来了</p>
 <p>枚举每个点用一个堆来维护每个节点的贡献</p>
 <p>可以删去和插入和询问最大值</p>
