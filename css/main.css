@@ -1787,7 +1787,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #28dfa7;
+  background: #1406c3;
 }
 .feed-link,
 .chat {
@@ -1966,7 +1966,7 @@ pre .javascript .function {
 }
 .footer {
   font-size: 14px;
-  color: #999;
+  color: #0dead6;
 }
 .footer img {
   border: none;
@@ -1974,10 +1974,13 @@ pre .javascript .function {
 .footer-inner {
   text-align: center;
 }
+#animate {
+  animation: iconAnimate 1.33s ease-in-out infinite;
+}
 .with-love {
   display: inline-block;
   margin: 0 5px;
-  color: #808080;
+  color: #0dead6;
 }
 .powered-by,
 .theme-info {
@@ -2997,4 +3000,7 @@ body {
   background: rgba(255,255,255,0.9) none repeat scroll !important;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.site-meta {
+  background: #0660bd;
 }
