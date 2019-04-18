@@ -104,6 +104,44 @@
 
 
 
+
+
+<script>
+window.ChatraSetup = {
+    chatWidth: 400,
+    chatHeight: 550
+};
+<script>
+window.ChatraSetup = {
+    colors: {
+        buttonText: '#f0f0f0', /* chat button text color */
+        buttonBg: '#565656'    /* chat button background color */
+    }
+};
+</script>
+<script>
+window.ChatraSetup = {
+    buttonPosition: window.innerWidth < 1024? // width threshold
+        'bl': // chat button position on small screens
+        'br'  // chat button position on big screens
+};
+</script>
+
+<!-- Chatra {literal} -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'brbR7fYmEjp6W4tSP';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
@@ -719,6 +757,14 @@
           
 
           
+            <div class="chat motion-element">
+              
+              
+              <i class="fa fa-comment"></i>
+                  Chat
+                
+            </div>
+          
 
           
             <div class="links-of-author motion-element">
@@ -774,7 +820,7 @@
 
           
           
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
                 Something Fun
@@ -796,7 +842,7 @@
           
             
           
-          
+          <button onclick="Chatra('openChat', true)">Open chat window</button>
         </div>
       </div>
 
