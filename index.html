@@ -140,6 +140,7 @@ window.ChatraSetup = {
 </script>
 <!-- /Chatra {/literal} -->
 
+<link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
   <meta name="description" content="每个人的心里都有一座长安城">
 <meta property="og:type" content="website">
 <meta property="og:title" content="明年今日">
@@ -565,9 +566,12 @@ window.ChatraSetup = {
 
       
         
-          <h2 id="国王游戏"><a href="#国王游戏" class="headerlink" title="国王游戏"></a>国王游戏</h2><p>首先，每个人在左、右手上面分别有一个整数。然后，$N$位大臣排成一排，国王站在队伍的最前面。每位大臣获得的金币数分别是：排在该大臣前面的所有人的左手上的数的乘积除以他自己右手上的数，然后向下取整得到的结果。现在要使金币的最大值最小</p>
+          <h2 id="国王游戏"><a class="markdownIt-Anchor" href="#国王游戏"></a> 国王游戏</h2>
+<p>首先，每个人在左、右手上面分别有一个整数。然后，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span>位大臣排成一排，国王站在队伍的最前面。每位大臣获得的金币数分别是：排在该大臣前面的所有人的左手上的数的乘积除以他自己右手上的数，然后向下取整得到的结果。现在要使金币的最大值最小</p>
 <hr>
-<p>可以来试着推一下<br>先把关系设好<br>假设加上国王只有下面三个人（大臣$Minister$用$M$表示，金币用$C$）<br>
+<p>可以来试着推一下<br>
+先把关系设好<br>
+假设加上国王只有下面三个人（大臣<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>i</mi><mi>n</mi><mi>i</mi><mi>s</mi><mi>t</mi><mi>e</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">Minister</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">i</span><span class="mord mathdefault">s</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span>用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span>表示，金币用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span>）</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -579,7 +583,7 @@ window.ChatraSetup = {
           <!--/noindex-->
         
       
-    </p></div>
+    </div>
 
     
 
@@ -774,7 +778,7 @@ window.ChatraSetup = {
 
       
         
-          <p>题目链接：<a href="https://www.luogu.org/problemnew/show/P3573" target="_blank" rel="noopener">传送门</a><br>
+          <p>题目链接：<a href="https://www.luogu.org/problemnew/show/P3573" target="_blank" rel="noopener">传送门</a></p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -786,7 +790,7 @@ window.ChatraSetup = {
           <!--/noindex-->
         
       
-    </p></div>
+    </div>
 
     
 
@@ -951,7 +955,8 @@ window.ChatraSetup = {
 
       
         
-          <h2 id="markdown测试"><a href="#markdown测试" class="headerlink" title="markdown测试"></a>markdown测试</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">priority_queue&lt;<span class="keyword">int</span>&gt; ins, del;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;ins.push(x);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">deletee</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;del.push(x);&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">top</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (!del.empty() <span class="keyword">and</span> !ins.empty() <span class="keyword">and</span> del.top() == ins.top()) &#123;del.pop(); ins.pop();&#125;</span><br><span class="line">    <span class="keyword">return</span> ins.top();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <h2 id="markdown测试"><a class="markdownIt-Anchor" href="#markdown测试"></a> markdown测试</h2>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">priority_queue&lt;<span class="keyword">int</span>&gt; ins, del;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;ins.push(x);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">deletee</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;del.push(x);&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">top</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (!del.empty() <span class="keyword">and</span> !ins.empty() <span class="keyword">and</span> del.top() == ins.top()) &#123;del.pop(); ins.pop();&#125;</span><br><span class="line">    <span class="keyword">return</span> ins.top();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
           <!--noindex-->
           
@@ -1130,7 +1135,9 @@ window.ChatraSetup = {
       
         
           <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
+<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
