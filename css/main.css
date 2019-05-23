@@ -1834,7 +1834,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b605e3;
+  background: #a83cd5;
 }
 .feed-link,
 .chat {
@@ -3057,7 +3057,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("http://wx1.sinaimg.cn/large/006Qni5ely1g2xhfvewwoj31hc0tz1kx.jpg");
+  background: url("http://wx1.sinaimg.cn/large/006Qni5ely1g2xh737313j31hc0u0qp3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
